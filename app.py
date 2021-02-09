@@ -35,7 +35,7 @@ def get_question(quiz="B333", num_options=4):
 @app.route('/',methods = ['POST', 'GET'])
 def vocabquiz():
     questions = quiz()
-    return render_template('index.html', questions=questions)
-
+    return render_template('index.html', questions=questions.get_data(as_text=True))
+    # return render_template('index.html', questions=questions)
 if __name__=="__main__":
     app.run(debug=True)
