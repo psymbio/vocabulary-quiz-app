@@ -32,12 +32,12 @@ p {
   font-size: 28px;
   margin: 0 0 1.5rem;
   line-height: 23px;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 h1 {
   font-size: 48px;
   color: #352d39;
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
   line-height: 1.3846153846;
 }
 ul {
@@ -140,4 +140,22 @@ ol {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.form-submit-button {
+  background: #000000;
+  font-size: 28px;
+  font-family: "Cabin", sans-serif;
+  color: white;
+  border-style: outset;
+  border-color: #000000;
+  height: 50px;
+  width: 200px;
+  /*border: 10px;*/
+  text-align: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
