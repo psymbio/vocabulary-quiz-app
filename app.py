@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, render_template, abort, url_for, json
 import numpy as np
 import pickle
+import json
 
 app = Flask(__name__)
 
@@ -35,7 +36,9 @@ def get_question(quiz="B333", num_options=4):
 @app.route('/',methods = ['POST', 'GET'])
 def vocabquiz():
     questions = quiz()
-    return render_template('index.html', questions=questions.get_data(as_text=True))
+    # q = questions.get_json()
+    # print(type(q))
+    return render_template('index.html', questions=questions.get_json())
     # return render_template('index.html', questions=questions)
 if __name__=="__main__":
     app.run(debug=True)
