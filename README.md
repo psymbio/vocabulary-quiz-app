@@ -1,5 +1,9 @@
 # Vocabulary Quiz Application
 
+A vocabulary quiz app implemented in Flask.
+
+![quiz-app](working/quiz.gif)
+
 Run using:
 ```
 export FLASK_APP=app.py
